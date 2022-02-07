@@ -1,0 +1,149 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="shortcut icon" href="favicon-32x32.png" type="image/x-icon" />
+    <title>Yehezkiel Wiradhika</title>
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <!-- fonts -->
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Sacramento&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#welcome-section">Home</a></li>
+          <li><a href="#about-me">About</a></li>
+          <li><a href="#projects">Work</a></li>
+          <li><a href="#lower">Contact</a></li>
+        </ul>
+
+        <i class="fas fa-bars"></i>
+      </nav>
+    </header>
+    <main>
+      <section id="welcome-section">
+        <h1>Hey I am Hezki</h1>
+        <h2>
+          <em>&lt; A <span class="pro">pro</span>grammer &#47;&gt;</em>
+        </h2>
+      </section>
+      <div class="middle-container" id="about-me">
+        <div class="profile">
+          <img
+            class="middle-img"
+            src="https://i.ibb.co/Hg8WvQn/yehezkel.png"
+            alt="Yehezkel Wiradhika"
+          />
+          <h2 class="profile-title">Hello.</h2>
+          <p class="profile-par">
+            My name is Yehezkel Wiradhika, an informatics student at Institut
+            Teknologi Sepuluh Nopember, Surabaya.
+          </p>
+        </div>
+        <hr />
+        <div class="skills">
+          <h2>My Skills.</h2>
+          <div class="skill-row">
+            <img
+              class="middle-img webdev-img"
+              src="https://i.ibb.co/ZHxnzv6/webdev.png"
+              alt="Web Development"
+            />
+            <div class="webdev-text">
+              <h3>Webdev</h3>
+              <p class="webdev-par">
+                Web development is the work involved in developing a website for
+                the Internet or an intranet. (wikipedia)
+              </p>
+            </div>
+          </div>
+          <div class="skill-row">
+            <div class="hacking-text">
+              <img
+                class="middle-img hacking-1 hacking-img"
+                src="https://i.ibb.co/PhW9XDp/hacking.png"
+                alt="Hacking"
+              />
+              <h3>Penetration Testing</h3>
+              <p class="hacking-par">
+                Penetration Testing refers to activities that seek to compromise
+                digital devices, such as computers, smartphones, tablets, and
+                even entire networks. (malwarebytes)
+              </p>
+            </div>
+            <img
+              class="middle-img hacking-2 hacking-img"
+              src="https://i.ibb.co/PhW9XDp/hacking.png"
+              alt="Hacking"
+            />
+          </div>
+        </div>
+        <hr />
+      </div>
+      <section id="projects">
+        <h1>My Projects</h1>
+        <div class="projects-container">
+          <% objects.forEach(object => { %>
+          <a href="<%= object.link %>" target="_blank">
+            <div class="img-container">
+              <img src="<%= object.img %>" alt="<%= object.desc %>" />
+            </div>
+            <div class="img-description">
+              <span class="code code1">&lt; </span>
+              <p class="project-title"><%= object.desc %></p>
+              <span class="code code2">&#47;&gt;</span>
+            </div>
+          </a>
+          <% }) %>
+        </div>
+
+        <button class="show-all">Show all</button>
+      </section>
+      <section id="lower">
+        <h1>Let's work together...</h1>
+        <p><em>How do you take your coffee?</em></p>
+        <div class="cta">
+          <a
+            id="profile-link"
+            href="https://www.linkedin.com/in/yehezkiel-wiradhika/"
+            target="_blank"
+            ><i class="fab fa-linkedin"></i> <span>Linkedin</span></a
+          >
+          <a
+            id="profile-link"
+            href="https://github.com/bazoka-kaka"
+            target="_blank"
+            ><i class="fab fa-github"></i> <span>Github</span></a
+          >
+          <a
+            id="profile-link"
+            href="https://www.instagram.com/yehezkel_w/"
+            target="_blank"
+            ><i class="fab fa-instagram"></i> <span>Instagram</span></a
+          >
+        </div>
+        <div class="footer">
+          <hr />
+          <p>©Yehezkel, 2022</p>
+        </div>
+      </section>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+  </body>
+</html>

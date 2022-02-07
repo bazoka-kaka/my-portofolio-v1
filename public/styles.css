@@ -1,0 +1,460 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+nav {
+  width: 100vw;
+  background: #be3144;
+  gap: 20px;
+  height: 75px;
+
+  position: fixed;
+  z-index: 50;
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+}
+
+p {
+  color: white;
+  font-size: 1.1rem;
+}
+
+nav ul {
+  margin-right: 40px;
+  display: flex;
+  position: relative;
+  gap: 20px;
+  justify-content: flex-end;
+  height: 100%;
+  align-items: center;
+  z-index: 10;
+  right: 0;
+}
+
+nav ul li {
+  list-style: none;
+  height: 100%;
+}
+
+nav li a {
+  text-decoration: none;
+  color: rgb(226, 224, 224);
+  font-size: 24px;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+nav li a:hover {
+  background: rgba(47, 47, 196, 0.842);
+}
+
+hr {
+  border: none;
+  border-top: dotted;
+  border-width: 0.8rem;
+  width: 10%;
+  border-color: #eaf6f6;
+  margin: auto;
+  opacity: 0.3;
+}
+
+#welcome-section {
+  background: linear-gradient(90deg, rgb(65, 65, 65), rgb(27, 27, 27));
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#welcome-section h1 {
+  color: white;
+  text-align: center;
+  font-size: 64px;
+}
+
+#welcome-section h2 {
+  color: #be3144;
+  font-weight: 100;
+  font-size: 36px;
+  opacity: 0.7;
+  animation-name: pulse;
+  animation-duration: 2000ms;
+  animation-iteration-count: infinite;
+}
+
+@keyframes pulse {
+  50% {
+    opacity: 0.2;
+  }
+}
+
+#projects {
+  background-color: #303841;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 75px 3rem;
+}
+
+#projects h1 {
+  color: white;
+  text-align: center;
+  font-size: 52px;
+  margin: 75px 0;
+}
+
+.fa-bars {
+  color: white;
+  font-size: 2.5rem;
+  position: absolute;
+  right: 15%;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0;
+}
+
+.projects-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 50px;
+  margin-bottom: 50px;
+}
+
+.projects-container a {
+  position: relative;
+  text-decoration: none;
+  border-radius: 2px;
+}
+
+.projects-container a:hover {
+  animation-name: hover;
+  animation-duration: 1000;
+  animation-fill-mode: forwards;
+}
+
+.img-container {
+  position: relative;
+  width: 350px;
+  height: 350px;
+}
+
+.img-container img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.projects-container img {
+  width: 100%;
+  position: absolute;
+  object-fit: cover;
+}
+
+.img-description {
+  width: 100%;
+  background-color: #45567d;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 20px;
+  border-radius: 2px;
+  z-index: 20;
+}
+
+.code {
+  color: orangered;
+  opacity: 0%;
+  transition: opacity 0.5s ease-out;
+}
+
+.projects-container a:hover .code {
+  opacity: 100%;
+}
+
+.code1 {
+  margin-right: 5px;
+}
+
+.code2 {
+  margin-left: 5px;
+}
+
+.show-all {
+  background: rgb(65, 65, 65);
+  margin-top: 50px;
+  color: white;
+  font-size: 24px;
+  padding: 7px;
+  padding-right: 15px;
+  padding-left: 15px;
+  border: none;
+  border-radius: 3px;
+  transition: background 0.3s ease-out;
+}
+
+.show-all span {
+  font-weight: 700;
+  margin-left: 10px;
+}
+
+.show-all:hover {
+  cursor: pointer;
+  background: #be3144;
+}
+
+#lower {
+  background: rgb(65, 65, 65);
+  height: 100vh;
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  position: relative;
+}
+
+#lower h1 {
+  font-size: 64px;
+}
+
+#lower p {
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.cta {
+  display: flex;
+  gap: 40px;
+  margin-top: 50px;
+}
+
+.cta a:hover {
+  transform: translateY(10px);
+}
+
+.cta a {
+  transform: translateY(0);
+  transition: transform 0.3s ease-out;
+  text-decoration: none;
+  color: white;
+  font-size: 1.8rem;
+  font-weight: 400;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.footer {
+  height: auto;
+  position: absolute;
+  bottom: 10px;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+#lower hr {
+  margin-bottom: 20px;
+  width: 100vw;
+  border: none;
+  height: 4px;
+  background: rgb(211, 51, 51);
+}
+
+.footer p {
+  margin-bottom: 20px;
+  margin-right: 40px;
+}
+
+/* middle container*/
+.middle-container {
+  text-align: center;
+  padding: 75px 0;
+  background: linear-gradient(45deg, #7a8db8, #6685cf, #4c659e);
+}
+
+.middle-img {
+  width: 175px;
+}
+
+.profile {
+  width: 50%;
+  margin: 75px auto;
+}
+
+.skills {
+  margin: 75px auto;
+  padding: 75px audo;
+}
+
+h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.5rem;
+  color: #a0f0c1;
+  font-weight: 600;
+}
+
+h3 {
+  font-family: "Montserrat", sans-serif;
+  color: #6ae4bd;
+  font-size: 1.5rem;
+}
+
+.profile-par {
+  margin: 0;
+  line-height: 2;
+}
+
+.profile-title {
+  margin: 30px auto 15px;
+}
+
+.skill-row {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  margin: 50px auto;
+  text-align: left;
+  line-height: 2;
+  gap: 30px;
+}
+
+.webdev-text {
+  text-align: left;
+}
+
+.hacking-text {
+  text-align: right;
+}
+
+@media (max-width: 700px) {
+  .cta a {
+    font-size: 20px;
+  }
+
+  #lower h1 {
+    font-size: 36px;
+  }
+
+  nav ul {
+    justify-content: center;
+  }
+
+  nav {
+    padding-right: 0;
+  }
+
+  .profile {
+    width: 80%;
+    margin: 75px auto;
+  }
+
+  hr {
+    width: 30%;
+  }
+
+  .skill-row {
+    width: 80%;
+  }
+
+  .fa-bars {
+    opacity: 1;
+  }
+
+  nav ul {
+    height: calc(100vh - 75px);
+    background-color: rgb(51, 47, 47);
+    margin-right: 0;
+    top: 75px;
+    flex-direction: column;
+    right: 100vw;
+  }
+  nav li {
+    width: 100%;
+  }
+
+  #welcome-section h2 {
+    margin-top: 20px;
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 410px) {
+  nav {
+    padding-right: 0;
+  }
+  .cta {
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+  }
+  .cta a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+  .cta a span {
+    visibility: hidden;
+    position: absolute;
+  }
+}
+
+.hacking-2 {
+  display: block;
+}
+
+.hacking-1 {
+  display: none;
+}
+
+@media (max-width: 1184px) {
+  .projects-container {
+    grid-template-columns: 1fr;
+  }
+  #welcome-section {
+    padding: 3rem;
+  }
+  #welcome-section h1 {
+    font-size: 3.5rem;
+  }
+  .skill-row {
+    flex-direction: column;
+  }
+  .webdev-text {
+    text-align: center;
+  }
+  .hacking-1 {
+    display: inline-block;
+    margin-bottom: 30px;
+  }
+  .hacking-2 {
+    display: none;
+  }
+  .hacking-text {
+    text-align: center;
+  }
+}
