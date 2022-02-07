@@ -6,12 +6,12 @@ const docs = [
   },
   {
     link: "https://schematics.vercel.app/",
-    img: "images/schematics-min.PNG",
+    img: "images/schematics-min.png",
     desc: "Schematics ITS 2021",
   },
   {
     link: "https://cofilm.id/",
-    img: "images/cofilm-min.PNG",
+    img: "images/cofilm-min.png",
     desc: "Cofilm+ Indonesia",
   },
   {
@@ -21,7 +21,7 @@ const docs = [
   },
   {
     link: "https://tindog-bazoka-kaka.netlify.app/",
-    img: "images/cia capture-min.PNG",
+    img: "images/cia capture-min.png",
     desc: "CIA Application",
   },
   {
@@ -31,27 +31,27 @@ const docs = [
   },
   {
     link: "https://simon-game-bazokakaka.netlify.app/",
-    img: "images/simon game-min.PNG",
+    img: "images/simon game-min.png",
     desc: "Simon Game",
   },
   {
     link: "https://judaistic.netlify.app/",
-    img: "images/judaistic101-min.PNG",
+    img: "images/judaistic101-min.png",
     desc: "Judaistic101",
   },
   {
     link: "https://codepen.io/bazoka-kaka/full/QWMJLXz",
-    img: "images/docs page-min.PNG",
+    img: "images/docs page-min.png",
     desc: "JS Docs Page",
   },
   {
     link: "https://drumkit-bazoka-kaka.netlify.app/",
-    img: "images/drum-min.PNG",
+    img: "images/drum-min.png",
     desc: "Drum Kit",
   },
   {
     link: "https://blogpost-bazokakaka.herokuapp.com/",
-    img: "images/blog-min.PNG",
+    img: "images/blog-min.png",
     desc: "Blog Compose",
   },
   {
