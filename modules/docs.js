@@ -15,14 +15,24 @@ const docs = [
     desc: "Cofilm+ Indonesia",
   },
   {
-    link: "https://tindog-bazoka-kaka.netlify.app/",
-    img: "images/tindog-min.png",
-    desc: "Tindog App",
+    link: "https://todolist-bazokakaka.herokuapp.com/",
+    img: "images/todolist-min.png",
+    desc: "Todolist",
+  },
+  {
+    link: "https://cia-application.netlify.app/",
+    img: "images/cia-capture-min.png",
+    desc: "CIA Application",
+  },
+  {
+    link: "https://questions-app-bazokakaka.herokuapp.com/",
+    img: "images/form-min.png",
+    desc: "Question App (Politics)",
   },
   {
     link: "https://tindog-bazoka-kaka.netlify.app/",
-    img: "images/cia-capture-min.png",
-    desc: "CIA Application",
+    img: "images/tindog-min.png",
+    desc: "Tindog App",
   },
   {
     link: "https://codepen.io/bazoka-kaka/full/vYeLqLo",
