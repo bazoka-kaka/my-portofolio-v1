@@ -21,7 +21,7 @@ const docs = [
   },
   {
     link: "https://tindog-bazoka-kaka.netlify.app/",
-    img: "images/cia capture-min.png",
+    img: "images/cia-capture-min.png",
     desc: "CIA Application",
   },
   {
