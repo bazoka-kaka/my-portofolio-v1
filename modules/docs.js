@@ -16,7 +16,7 @@ const docs = [
   },
   {
     link: "https://todolist-bazokakaka.herokuapp.com/",
-    img: "images/todolist-min.png",
+    img: "images/todolist.png",
     desc: "Todolist",
   },
   {
