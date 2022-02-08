@@ -30,6 +30,11 @@ const docs = [
     desc: "Question App (Politics)",
   },
   {
+    link: "https://judaistic.netlify.app/",
+    img: "images/judaistic101-min.png",
+    desc: "Judaistic101",
+  },
+  {
     link: "https://tindog-bazoka-kaka.netlify.app/",
     img: "images/tindog-min.png",
     desc: "Tindog App",
@@ -43,11 +48,6 @@ const docs = [
     link: "https://simon-game-bazokakaka.netlify.app/",
     img: "images/simon game-min.png",
     desc: "Simon Game",
-  },
-  {
-    link: "https://judaistic.netlify.app/",
-    img: "images/judaistic101-min.png",
-    desc: "Judaistic101",
   },
   {
     link: "https://codepen.io/bazoka-kaka/full/QWMJLXz",
