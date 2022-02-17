@@ -93,13 +93,16 @@
             />
           </div>
         </div>
-        <hr />
       </div>
       <section id="projects">
         <h1>My Projects</h1>
         <div class="projects-container">
-          <% objects.forEach(object => { %>
-          <a href="<%= object.link %>" target="_blank">
+          <% objects.forEach((object, i) => { %>
+          <a
+            class="<%= i >= 3? 'hidden': '' %>"
+            href="<%= object.link %>"
+            target="_blank"
+          >
             <div class="img-container">
               <img src="<%= object.img %>" alt="<%= object.desc %>" />
             </div>
@@ -111,8 +114,7 @@
           </a>
           <% }) %>
         </div>
-
-        <button class="show-all">Show all</button>
+        <button class="show-all">Show More</button>
       </section>
       <section id="lower">
         <h1>Let's work together...</h1>

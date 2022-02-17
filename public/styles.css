@@ -431,6 +431,10 @@ h3 {
   display: none;
 }
 
+.hidden {
+  display: none;
+}
+
 @media (max-width: 1184px) {
   .projects-container {
     grid-template-columns: 1fr;
