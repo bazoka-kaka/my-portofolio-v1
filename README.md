@@ -1,6 +1,6 @@
 # My Portofolio Website
 
-This is my portofolio website. 
+This is my temporary portofolio website. 
 
 Things I included here:
 - Brief Introduction
