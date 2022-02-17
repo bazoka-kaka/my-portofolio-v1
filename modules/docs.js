@@ -35,29 +35,14 @@ const docs = [
     desc: "Judaistic101",
   },
   {
-    link: "https://tindog-bazoka-kaka.netlify.app/",
-    img: "images/tindog-min.png",
-    desc: "Tindog App",
-  },
-  {
     link: "https://codepen.io/bazoka-kaka/full/vYeLqLo",
     img: "images/guessing game-min.png",
     desc: "Guessing Game",
   },
   {
-    link: "https://simon-game-bazokakaka.netlify.app/",
-    img: "images/simon game-min.png",
-    desc: "Simon Game",
-  },
-  {
     link: "https://codepen.io/bazoka-kaka/full/QWMJLXz",
     img: "images/docs page-min.png",
     desc: "JS Docs Page",
-  },
-  {
-    link: "https://drumkit-bazoka-kaka.netlify.app/",
-    img: "images/drum-min.png",
-    desc: "Drum Kit",
   },
   {
     link: "https://blogpost-bazokakaka.herokuapp.com/",
