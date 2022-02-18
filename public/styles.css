@@ -322,11 +322,24 @@ hr {
 .middle-container {
   text-align: center;
   padding: 75px 0;
-  background: linear-gradient(45deg, #99a6c2, #7786aa, #6685cf, #4c659e);
+  background: linear-gradient(45deg, #707c96, #5b6886, #415481, #1f3057);
 }
 
 .middle-img {
   width: 175px;
+  border-radius: 50%;
+}
+
+.middle-img-1 {
+  border: 10px solid #4da78a;
+}
+
+.webdev-img {
+  border: 10px solid #be3144;
+}
+
+.hacking-img {
+  border: 10px solid #1f3057;
 }
 
 .profile {
@@ -377,6 +390,21 @@ h3 {
 
 .hacking-text {
   text-align: right;
+}
+
+.project-header {
+  position: relative;
+}
+
+.project-hr {
+  position: absolute;
+  left: 0;
+  bottom: -20px;
+  border: none;
+  height: 5px;
+  background: linear-gradient(45deg, red, blue);
+  width: 100%;
+  border-radius: 5px;
 }
 
 @media (max-width: 700px) {
