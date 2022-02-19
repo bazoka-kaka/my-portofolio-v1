@@ -331,15 +331,15 @@ hr {
 }
 
 .middle-img-1 {
-  border: 10px solid #4da78a;
+  border: 0.5rem solid #4da78a;
 }
 
 .webdev-img {
-  border: 10px solid #be3144;
+  border: 0.5rem solid #be3144;
 }
 
 .hacking-img {
-  border: 10px solid #1f3057;
+  border: 0.5rem solid #1f3057;
 }
 
 .profile {
