@@ -65,6 +65,11 @@ nav li a:hover {
   transition: background 0.2s ease-in;
 }
 
+nav li a:active {
+  background: rgba(119, 119, 243, 0.842);
+  transition: background 0.2s ease-in;
+}
+
 hr {
   border: none;
   border-top: dotted;
@@ -77,7 +82,7 @@ hr {
 
 #welcome-section {
   background: linear-gradient(90deg, rgb(65, 65, 65), rgb(27, 27, 27));
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -146,17 +151,19 @@ hr {
 .projects-container a {
   position: relative;
   text-decoration: none;
-  border-radius: 2px;
+  border-radius: 20px;
 }
 
 .projects-container a:hover {
   animation-name: hover;
   animation-duration: 1000;
   animation-fill-mode: forwards;
+  border-radius: 20px;
 }
 
 .img-description {
   position: absolute;
+  border-radius: 20px;
   left: 0;
   top: 0;
   background-color: rgba(0, 0, 0, 0.6);
@@ -192,17 +199,20 @@ hr {
   position: relative;
   width: 350px;
   height: 350px;
+  border-radius: 20px;
 }
 
 .img-container img {
   height: 100%;
   object-fit: cover;
+  border-radius: 20px;
 }
 
 .projects-container img {
   width: 100%;
   position: absolute;
   object-fit: cover;
+  border-radius: 20px;
 }
 
 /* .img-description {
@@ -368,7 +378,7 @@ hr {
 
 .skills {
   padding-top: 75px;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
