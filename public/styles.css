@@ -25,8 +25,9 @@ nav {
 }
 
 p {
-  color: white;
-  font-size: 1.1rem;
+  font-family: "roboto", sans-serif;
+  color: #ddd;
+  font-size: 1.2rem;
 }
 
 nav ul {
@@ -56,10 +57,12 @@ nav li a {
   align-items: center;
   padding-right: 20px;
   padding-left: 20px;
+  background: rgba(47, 47, 196, 0);
 }
 
 nav li a:hover {
   background: rgba(47, 47, 196, 0.842);
+  transition: background 0.2s ease-in;
 }
 
 hr {
@@ -82,19 +85,22 @@ hr {
 }
 
 #welcome-section h1 {
-  color: white;
+  color: #eee;
   text-align: center;
-  font-size: 64px;
+  font-size: 3.5rem;
+  font-family: "roboto-serif", sans-serif;
+  margin-bottom: 5px;
 }
 
 #welcome-section h2 {
   color: #be3144;
   font-weight: 100;
-  font-size: 36px;
+  font-size: 2.2rem;
   opacity: 0.7;
   animation-name: pulse;
   animation-duration: 2000ms;
   animation-iteration-count: infinite;
+  font-family: "Montserrat", sans-serif;
 }
 
 @keyframes pulse {
@@ -104,15 +110,17 @@ hr {
 }
 
 #projects {
+  min-height: 100vh;
   background-color: #303841;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   padding: 75px 3rem;
 }
 
 #projects h1 {
-  color: white;
+  color: #eee;
   text-align: center;
   font-size: 52px;
   margin: 75px 0;
@@ -122,7 +130,7 @@ hr {
   color: white;
   font-size: 2.5rem;
   position: absolute;
-  right: 15%;
+  right: 10%;
   top: 50%;
   transform: translateY(-50%);
   opacity: 0;
@@ -321,8 +329,14 @@ hr {
 /* middle container*/
 .middle-container {
   text-align: center;
-  padding: 75px 0;
   background: linear-gradient(45deg, #707c96, #5b6886, #415481, #1f3057);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 80%;
 }
 
 .middle-img {
@@ -331,7 +345,7 @@ hr {
 }
 
 .middle-img-1 {
-  border: 0.5rem solid #4da78a;
+  border: 0.5rem solid #8565c4;
 }
 
 .webdev-img {
@@ -343,25 +357,35 @@ hr {
 }
 
 .profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 50%;
-  margin: 75px auto;
+  height: 100vh;
+  margin: auto;
 }
 
 .skills {
-  margin: 75px auto;
-  padding: 75px audo;
+  padding-top: 75px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* margin: 75px auto; */
 }
 
 h2 {
-  font-family: "Montserrat", sans-serif;
-  font-size: 2.5rem;
+  font-family: "Lobster", sans-serif;
   color: #a0f0c1;
+  font-size: 2.7rem;
   font-weight: 600;
 }
 
 h3 {
   font-family: "Montserrat", sans-serif;
-  color: #6ae4bd;
+  color: #a0f0c1;
   font-size: 1.5rem;
 }
 
@@ -377,8 +401,8 @@ h3 {
 .skill-row {
   display: flex;
   align-items: center;
-  width: 50%;
-  margin: 50px auto;
+  width: 70%;
+  margin: 30px auto;
   text-align: left;
   line-height: 2;
   gap: 30px;
@@ -504,7 +528,11 @@ h3 {
     padding: 3rem;
   }
   #welcome-section h1 {
-    font-size: 3.5rem;
+    font-size: 3.2rem;
+  }
+
+  #welcome-section h2 {
+    font-size: 1.7rem;
   }
   .skill-row {
     flex-direction: column;
