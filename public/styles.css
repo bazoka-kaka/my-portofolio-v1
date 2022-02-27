@@ -108,6 +108,11 @@ hr {
   font-family: "Montserrat", sans-serif;
 }
 
+#welcome-section h2:hover {
+  animation: none;
+  cursor: pointer;
+}
+
 @keyframes pulse {
   50% {
     opacity: 0.2;
@@ -277,18 +282,19 @@ hr {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: white;
   position: relative;
 }
 
 #lower h1 {
   font-size: 64px;
+  color: #eee;
 }
 
 #lower p {
   margin-top: 10px;
   font-size: 20px;
   font-weight: 500;
+  color: #ddd;
 }
 
 .cta {
