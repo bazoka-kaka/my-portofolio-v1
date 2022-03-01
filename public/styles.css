@@ -383,7 +383,8 @@ hr {
 }
 
 .skills {
-  padding-top: 75px;
+  padding: 75px 0 0;
+  margin: 0 0 75px;
   min-height: 100vh;
   display: flex;
   justify-content: center;
@@ -447,7 +448,23 @@ h3 {
   border-radius: 5px;
 }
 
+.skills-md {
+  display: none;
+}
+
 @media (max-width: 700px) {
+  .skills-lg {
+    display: none;
+  }
+  .skills {
+    padding: 0;
+  }
+  .skills-md {
+    display: block;
+  }
+  body {
+    overflow-x: hidden;
+  }
   .cta a {
     font-size: 20px;
   }
@@ -466,7 +483,8 @@ h3 {
 
   .profile {
     width: 80%;
-    margin: 75px auto;
+    margin: 0 auto;
+    height: 100vh;
   }
 
   hr {
@@ -491,6 +509,16 @@ h3 {
   }
   nav li {
     width: 100%;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  .skill-row {
+    height: 100vh;
+    margin: 0;
+    justify-content: center;
   }
 
   #welcome-section h2 {
