@@ -24,6 +24,11 @@ nav {
   box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
 }
 
+.header-link {
+  text-decoration: none;
+  color: #be3144;
+}
+
 p {
   font-family: "roboto", sans-serif;
   color: #ddd;
