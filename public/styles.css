@@ -18,10 +18,19 @@ nav {
   background: #be3144;
   gap: 20px;
   height: 75px;
-
   position: fixed;
   z-index: 50;
   box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+}
+
+.nav-logo-link {
+  height: 100%;
+  position: absolute;
+  padding: 5px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 40px;
 }
 
 .header-link {
